@@ -19,7 +19,7 @@ public class LargestAmongNumbers {
 		System.out.println("Enter Third Number");
 		c = num.nextInt();
 		
-		if((a > b) && (a > c)) {
+		if((a > b) && (a > b)) {
 			System.out.println("The Largest Number is : " + a);
 		} 
 		else if((b > a) && (b > c)) {
