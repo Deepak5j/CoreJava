@@ -6,7 +6,9 @@
 
 package arrays;
 
-import java.lang.reflect.Array;
+//import java.lang.reflect.Array;
+// DON"T write Array. Write Arrays. Line 28
+import java.util.Arrays;
 
 public class CommonValuesInTwoArrays {
 	static void commonValues(int[] arr1, int[] arr2) {
@@ -23,8 +25,10 @@ public class CommonValuesInTwoArrays {
 		int[] arr1 = {11, 22, 33, 44, 55};
 		int[] arr2 = {66, 77, 88, 55, 11};
 		
-		System.out.println("arr1[] = " + Array.tpString(arr1));
+		System.out.println("arr1[] = " + Arrays.toString(arr1));
+		System.out.println("arr2[] = " + Arrays.toString(arr2));
 		
+		commonValues(arr1, arr2);
 	}
 
 
