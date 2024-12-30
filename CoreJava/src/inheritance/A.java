@@ -29,7 +29,7 @@ class B extends A {
 	void methodB2() {
 		System.out.println("This is class B method 2");
 	}
-	void methodB3() {
+	void method3() {
 		System.err.println("This is override method - class B");
 	}
 }
@@ -43,7 +43,7 @@ class C extends B {
 	void methodC2() {
 		System.out.println("This is class C method 2");
 	}
-	void methodC3() {
+	void method3() {
 		System.out.println("This is override method - class C");
 	}
 }
