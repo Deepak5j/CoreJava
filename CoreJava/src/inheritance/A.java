@@ -53,10 +53,36 @@ class C extends B {
 //working class
 class Inheritence {
 	public static void main(String[] args) {
+		// For class A
 		A a = new A();
 		a.methodA1();
 		a.methodA2();
 		a.method3();
+		
+		// For class B
+		B b = new B();
+		b.methodB1();
+		b.methodB2();
+		b.method3();
+		
+		// For Class C
+		C c = new C();
+		c.methodC1();
+		c.methodC2();
+		c.method3();
+		
+		// for overridden method
+		A orm;
+		orm = new B(); // upcasting
+		orm.method3();
+		
+		orm = new C(); // upcasting
+		orm.method3();
+		
+		
+		
+		
+		
 		
 		
 	}
