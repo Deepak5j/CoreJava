@@ -15,6 +15,7 @@ public class A {
 	void method2() {
 		System.out.println("This is class A method 2");
 	}
+	@Override 
 	void method3() {
 		System.out.println("This is override method - class A");
 	}
@@ -29,8 +30,9 @@ class B extends A {
 	void methodB2() {
 		System.out.println("This is class B method 2");
 	}
+	@Override
 	void method3() {
-		System.err.println("This is override method - class B");
+		System.out.println("This is override method - class B");
 	}
 }
 
