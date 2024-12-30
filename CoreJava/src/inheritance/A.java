@@ -79,11 +79,18 @@ class Inheritence {
 		orm = new C(); // upcasting
 		orm.method3();
 		
+		// run time polymorphism
+		A rtp;
+		rtp = new A();
+		System.out.println(rtp.n);
+		rtp = new B();
+		System.out.println(rtp.n);
+		rtp = new C();
+		System.out.println(rtp.n);
 		
-		
-		
-		
-		
-		
+		/**Method is overridden not the data members,
+        	so runtime polymorphism can't be achieved 
+			by data members
+		**/
 	}
 }
