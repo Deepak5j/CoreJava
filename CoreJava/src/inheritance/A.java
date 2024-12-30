@@ -20,3 +20,30 @@ public class A {
 	}
 }
 
+// subclass of A
+class B extends A {
+	int n = 22;
+	void methodB1() {
+		System.out.println("This is class B method 1");
+	}
+	void methodB2() {
+		System.out.println("This is class B method 2");
+	}
+	void methodB3() {
+		System.err.println("This is override method - class B");
+	}
+}
+
+// subclass of B 
+class C extends B {
+	int n = 33;
+	void methodC1() {
+		System.out.println("This is class C method 1");
+	}
+	void methodC2() {
+		System.out.println("This is class C method 2");
+	}
+	void methodC3() {
+		System.out.println("This is override method - class C");
+	}
+}
