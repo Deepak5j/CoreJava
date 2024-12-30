@@ -12,10 +12,9 @@ public class A {
 	void methodA1() {
 		System.out.println("This is class A method 1");
 	}
-	void method2() {
+	void methodA2() {
 		System.out.println("This is class A method 2");
-	}
-	@Override 
+	} 
 	void method3() {
 		System.out.println("This is override method - class A");
 	}
@@ -45,7 +44,20 @@ class C extends B {
 	void methodC2() {
 		System.out.println("This is class C method 2");
 	}
+	@Override
 	void method3() {
 		System.out.println("This is override method - class C");
+	}
+}
+
+//working class
+class Inheritence {
+	public static void main(String[] args) {
+		A a = new A();
+		a.methodA1();
+		a.methodA2();
+		a.method3();
+		
+		
 	}
 }
