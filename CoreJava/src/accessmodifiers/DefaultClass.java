@@ -5,8 +5,10 @@
  */
 
 package accessmodifiers;
+//public class must be one only in a java file
+//public class name must be same as the file name
 
-public class DefaultClass {
+class DefaultClass {
 	int myAge;
 	String myName;
 	void defaultMethof() {
