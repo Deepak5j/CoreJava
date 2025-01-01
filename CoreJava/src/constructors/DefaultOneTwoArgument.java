@@ -6,21 +6,21 @@
 
 package constructors;
 
-class ParentClass {
+class ParentClass1 {
     int rollNo;
     String name;
     String branch;
 
-    ParentClass() {
+    ParentClass1() {
         System.out.println("Student Details");
     }
 
-    ParentClass(int rollNo) {
+    ParentClass1(int rollNo) {
         this.rollNo = rollNo;
         System.out.println("Roll No : " + this.rollNo);
     }
 
-    ParentClass(String name, String branch) {
+    ParentClass1(String name, String branch) {
         this.name = name;
         this.branch = branch;
         System.out.println("Name : " + this.name);
@@ -30,9 +30,9 @@ class ParentClass {
 
 public class DefaultOneTwoArgument {
 	public static void main(String[] args) {
-		new ParentClass();
-        new ParentClass(123);
-        new ParentClass("Deepak", "CSE");
+		new ParentClass1();
+        new ParentClass1(123);
+        new ParentClass1("Deepak", "CSE");
 
 	}
 }
