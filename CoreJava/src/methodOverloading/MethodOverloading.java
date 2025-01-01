@@ -18,24 +18,24 @@ public class MethodOverloading {
 	void method1(int number1, int number2) {
 		this.number1 = number1;
 		this.number2 = number2;
-		System.out.println("1.Sum of two number: " + (number1 + number2));
+		System.out.println("\n1.Sum of two number: " + (number1 + number2));
 	}
 	void method2(int rollNo) {
 		this.rollNo = rollNo;
-		System.out.println("2.Roll number: " + rollNo + "; " + "Name: " + name);		
+		System.out.println("\n2.Roll number: " + rollNo + "; " + "Name: " + name);		
 	}
 	void method2(int rollNo, String name) {
 		this.rollNo = rollNo;
 		this.name = name;
-		System.out.println("2.Roll number: " + rollNo + "; " + "Name: " + name);
+		System.out.println("\n2.Roll number: " + rollNo + "; " + "Name: " + name);
 	}
 	void method4(int rollNo) {
 		this.rollNo = rollNo;
-		System.out.println("4.Roll number: " + rollNo + "; " + "Name: " + name);
+		System.out.println("\n4.Roll number: " + rollNo + "; " + "Name: " + name);
 	}
 	void method4(String name) {
 		this.name = name;
-		System.out.println("4.Name: " + name);
+		System.out.println("\n4.Name: " + name);
 	}
 	public static void main(String[] args) {
 		MethodOverloading obj = new MethodOverloading();
@@ -46,7 +46,8 @@ public class MethodOverloading {
 		obj.method2(123, "Deepak");
 		
 		obj.method4(123);
-		obj.method4("Deepak");		
+		obj.method4("Deepak");         
+		
 	}
 }
 
