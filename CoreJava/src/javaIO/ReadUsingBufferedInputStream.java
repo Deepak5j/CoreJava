@@ -7,25 +7,21 @@
 package javaIO;
 
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.BufferedInputStream;
 
 public class ReadUsingBufferedInputStream {
 	public static void main(String[] args) {
-		
-		
-		try {
-			FileInputStream fis = new FileInputStream("src/textFIlesForJavaIOPackage/bos.txt");
-			BufferedInputStream bis = new BufferedInputStream(fis);
-			int i;
-			while((i = bis.read()) != -1) {
-				System.out.print((char)i);
+		String filePath = "src/textFilesForJavaIOPackage/bos.txt";
+		try(FileInputStream fis = new FileInputStream(filePath);
+			BufferedInputStream bis = new BufferedInputStream(fis)) {
+			int data;
+			while((data = bis.read()) != -1) {
+				System.out.print((char)data);
 			}
-			bis.close();
-			fis.close();
-			
-		} catch(Exception e) {
+		} catch(IOException e) {
 			e.getStackTrace();
-			e.printStackTrace();
+			e.printStackTrace();			
 		}
 	}
 
