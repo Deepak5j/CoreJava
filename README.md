@@ -1,6 +1,6 @@
 # Core Java     
 
-## Topics Covered
+### Topics Covered
 - 01. Basics Assignment
 - 02. Operators Assignment
 - 03. Loops Assignment
