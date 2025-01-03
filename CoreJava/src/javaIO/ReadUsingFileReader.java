@@ -9,16 +9,17 @@ package javaIO;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class ReadUsingFileReader {
-	try(FileReader fr = new FileReader("fw.txt")) {
-		int data;
-		while((data = fr.read()) != -1) {
-			System.out.print((char)data);
+public class ReadUsingFileReader { 
+	public static void main(String[] args) {
+		try(FileReader fr = new FileReader("fw.txt")) {
+			int data;
+			while((data = fr.read()) != -1) {
+				System.out.print((char)data);
+			}
+		}
+		catch(IOException e) {
+			e.printStackTrace();
 		}
 	}
-	catch(IOException e) {
-		e.printStackTrace();
-	}
-  }
 }
 
