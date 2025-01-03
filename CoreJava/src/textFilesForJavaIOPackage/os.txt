@@ -1,1 +1,1 @@
-This text is written using OutputStream..
+This text is written using OutputStream.
