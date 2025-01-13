@@ -47,7 +47,7 @@ public class DataStructures {
 		stack.push(15);
 		stack.push(20);
 		System.out.print(stack);
-		//Queue
+		//Queue (LinkedList implementation):
 		System.out.println();
 		Queue<Integer> queue = new LinkedList<>();
 		queue.add(1000);
@@ -55,11 +55,6 @@ public class DataStructures {
 		queue.add(3000);
 		queue.add(4000);
 		System.out.print(queue);
-		
-		
-		
-		
-		
 	}
 
 }
