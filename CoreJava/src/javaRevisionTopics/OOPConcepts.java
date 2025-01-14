@@ -46,5 +46,17 @@ class Dog extends Animal {
 	}
 }
 
+// Polymorphism
+class Shape {
+	void draw() {
+		System.out.println("Drawing shape");
+	}
+}
+class Circle extends Shape {
+	void draw() {
+		System.out.println("Drawing circle");
+	}
+}
+
 
 
