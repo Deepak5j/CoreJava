@@ -33,5 +33,18 @@ class Employee {
 	}
 }
 
+// Inheritance
+class Animal {
+	void eat() {
+		System.out.println("This animal eats food.");
+	}
+}
+
+class Dog extends Animal {
+	void barks() {
+		System.out.println("Dog barks");
+	}
+}
+
 
 
