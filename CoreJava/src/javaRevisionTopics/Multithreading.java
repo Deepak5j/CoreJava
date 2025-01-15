@@ -12,6 +12,8 @@ public class Multithreading {
 		t1.start();
 		Thread t2 = new Thread(new MyRunnable());
 		t2.start();
+		Counter c = new Counter();
+		System.out.println(c.getCount());
 	}
 
 }
@@ -27,6 +29,17 @@ class MyThread extends Thread {
 class MyRunnable implements Runnable {
 	public void run() {
 		System.out.println("Runnable thread is runnning.");
+	}
+}
+
+//synchronization
+class Counter {
+	private int count = 0;
+	public synchronized void increment() {
+		count++;
+	}
+	public int getCount() {
+		return count;
 	}
 }
 
