@@ -8,8 +8,10 @@ package javaRevisionTopics;
 
 public class Multithreading {
 	public static void main(String[] args) {
-		MyThread t = new MyThread();
-		t.start();
+		MyThread t1 = new MyThread();
+		t1.start();
+		Thread t2 = new Thread(new MyRunnable());
+		t2.start();
 	}
 
 }
@@ -20,5 +22,14 @@ class MyThread extends Thread {
 		System.out.println("Thread is running.");
 	}
 }
+
+//using runnable interface
+class MyRunnable implements Runnable {
+	public void run() {
+		System.out.println("Runnable thread is runnning.");
+	}
+}
+
+
 
 
