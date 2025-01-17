@@ -66,9 +66,7 @@ public class Algorithms {
 		obj.bubbleSort(array);
 		obj.selectionSort(array);
 		obj.insertionSort(array);
-		obj.binarySearch(array, 5);
-		
-		
+		obj.binarySearch(array, 5);	
 	}
 }
 
