@@ -24,6 +24,10 @@ class Lion extends Animal {
 		Lion l = new Lion();
 		l.sound();
 		l.eat();
+		
+		Lion l2 = new Lion();
+		l2.sound();
+		l2.eat();
 	}
 }
 
